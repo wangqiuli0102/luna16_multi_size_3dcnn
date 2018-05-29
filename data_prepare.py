@@ -30,6 +30,7 @@ def extract_real_cubic_from_mhd(dcim_path,annatation_file,plot_output_path,norma
       @param: plot_output_path:           the save path of extracted cubic of size 20x20x6,30x30x10,40x40x26 npy file(plot ),every nodule end up withs three size
       @param:normalization_output_path:   the save path of extracted cubic of size 20x20x6,30x30x10,40x40x26 npy file(after normalization)
     '''
+    print("extract_real_cubic_from_mhd")
     file_list=glob(dcim_path+"*.mhd")
     # The locations of the nodes
     df_node = pd.read_csv(annatation_file)
@@ -82,7 +83,7 @@ def extract_real_cubic_from_mhd(dcim_path,annatation_file,plot_output_path,norma
                     np.save(os.path.join(normalization_output_path, "%d_real_size20x20.npy" % node_idx),imgs1)
                     np.save(os.path.join(normalization_output_path, "%d_real_size30x30.npy" % node_idx),imgs2)
                     np.save(os.path.join(normalization_output_path, "%d_real_size40x40.npy" % node_idx),imgs3)
-                    #print("normalization finished!..." )
+                    print("normalization finished!..." )
 
                 except Exception as e:
                     print(" process images %s error..."%str(file_name))
@@ -97,6 +98,7 @@ def extract_fake_cubic_from_mhd(dcim_path,annatation_file,plot_output_path,norma
       @param: plot_output_path:           the save path of extracted cubic of size 20x20x6,30x30x10,40x40x26 npy file(plot ),every nodule end up withs three size
       @param:normalization_output_path:   the save path of extracted cubic of size 20x20x6,30x30x10,40x40x26 npy file(after normalization)
     '''
+    print("extract_fake_cubic_from_mhd")
     file_list=glob(dcim_path+"*.mhd")
     # The locations of the nodes
     df_node = pd.read_csv(annatation_file)
@@ -164,7 +166,7 @@ def extract_fake_cubic_from_mhd(dcim_path,annatation_file,plot_output_path,norma
 
                     num = num+1
 
-                    #print(" extract fake cubic finished...")
+                    print(" extract fake cubic finished...")
                 except Exception as e:
                     print(" process images %s error..." % str(file_name))
                     print(Exception, ":", e)
@@ -327,11 +329,13 @@ def angle_transpose(file,degree,flag_string):
 if __name__ =='__main__':
 
     for i in range(0,9):
+        print("in loop1")
         dcim_path = base_dir +'subset'+str(i)+"/"
         extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,normalazation_output_path)
         extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path, normalazation_output_path)
 
     for i in range(9,10):
+        print("in loop2")
         dcim_path = base_dir +'subset'+str(i)+"/"
         extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,test_path)
         extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path,test_path)

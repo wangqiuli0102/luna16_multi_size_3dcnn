@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "data_prepare.py", line 139, in extract_fake_cubic_from_mhd
+    int(v_center[1] - 15):int(v_center[1] + 15), int(v_center[2] - 5):int(v_center[2] + 5)]
+ValueError: could not broadcast input array from shape (30,30,0) into shape (30,30,10)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 137, in extract_fake_cubic_from_mhd
+    int(v_center[1] - 10):int(v_center[1] + 10), int(v_center[2] - 3):int(v_center[2] + 3)]
+ValueError: could not broadcast input array from shape (20,20,0) into shape (20,20,6)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,20) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,20) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,22) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,20) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
+ValueError: could not broadcast input array from shape (40,40,0) into shape (40,40,26)
+Traceback (most recent call last):
+  File "data_prepare.py", line 142, in extract_fake_cubic_from_mhd
+    int(v_center[2] - 13):int(v_center[2] + 13)]
