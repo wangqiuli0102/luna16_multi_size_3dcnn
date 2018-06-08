@@ -1,0 +1,4 @@
+subset0.zip to subset9.zip: 10 zip files which contain all CT images
+annotations.csv: csv file that contains the annotations used as reference standard for the 'nodule detection' track
+sampleSubmission.csv: an example of a submission file in the correct format
+candidates_V2.csv: csv file that contains the candidate locations for the ‘false positive reduction’ track

@@ -327,34 +327,36 @@ def angle_transpose(file,degree,flag_string):
 
 
 if __name__ =='__main__':
+    for i in range(0, 9):
+        print(i)
 
-    for i in range(0,9):
-        print("in loop1")
-        dcim_path = base_dir +'subset'+str(i)+"/"
-        extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,normalazation_output_path)
-        extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path, normalazation_output_path)
+    # for i in range(0,9):
+    #     print("in loop1")
+    #     dcim_path = base_dir +'subset'+str(i)+"/"
+    #     extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,normalazation_output_path)
+    #     extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path, normalazation_output_path)
 
-    for i in range(9,10):
-        print("in loop2")
-        dcim_path = base_dir +'subset'+str(i)+"/"
-        extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,test_path)
-        extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path,test_path)
-        print("  #######  extract cubic from subset%d finished    #######"%i)
-    print("finished!...")
-    #list = search(normalazation_output_path,'real_size10x10')
-    print(list)
-    #plot_cubic(
-    #    '/data/LUNA2016/cubic_npy/images_1.3.6.1.4.1.14519.5.2.1.6279.6001.868211851413924881662621747734.mhd_1123_pos-79.93305233_81.93715229_-169.4337204_size10x10.npy')
+    # for i in range(9,10):
+    #     print("in loop2")
+    #     dcim_path = base_dir +'subset'+str(i)+"/"
+    #     extract_real_cubic_from_mhd(dcim_path, annatation_file, plot_output_path,test_path)
+    #     extract_fake_cubic_from_mhd(dcim_path, candidate_file, plot_output_path,test_path)
+    #     print("  #######  extract cubic from subset%d finished    #######"%i)
+    # print("finished!...")
+    # #list = search(normalazation_output_path,'real_size10x10')
+    # print(list)
+    # #plot_cubic(
+    # #    '/data/LUNA2016/cubic_npy/images_1.3.6.1.4.1.14519.5.2.1.6279.6001.868211851413924881662621747734.mhd_1123_pos-79.93305233_81.93715229_-169.4337204_size10x10.npy')
 
-    files = [os.path.join(normalazation_output_path,x) for x in os.listdir(normalazation_output_path)]
-    print("how many files in normalzation path:  ",len(files))
-    real_files = [m for m in files if "real" in m]
-    print("how many files in real path:  ", len(real_files))
-    for file in real_files:
-        angle_transpose(file,90,"_leftright")
-        angle_transpose(file, 180, "_updown")
-        angle_transpose(file, 270, "_diagonal")
-    print("Final step done...")
+    # files = [os.path.join(normalazation_output_path,x) for x in os.listdir(normalazation_output_path)]
+    # print("how many files in normalzation path:  ",len(files))
+    # real_files = [m for m in files if "real" in m]
+    # print("how many files in real path:  ", len(real_files))
+    # for file in real_files:
+    #     angle_transpose(file,90,"_leftright")
+    #     angle_transpose(file, 180, "_updown")
+    #     angle_transpose(file, 270, "_diagonal")
+    # print("Final step done...")
 
 
 
